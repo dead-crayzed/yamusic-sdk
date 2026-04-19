@@ -264,4 +264,6 @@ yamusic-sdk/
 
 > 💡 **Совет**: Все скачанные файлы сохраняются в папку `music/` (или указанную в `MUSIC_DOWNLOAD_DIR`). Используйте `client.delete_downloaded()` для очистки.
 
+<<<<<<< HEAD
 **Happy listening! 🎧**
+
