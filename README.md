@@ -50,8 +50,11 @@ pip install yandex-music python-dotenv requests urllib3
 
 ### Получение токена
 
-1. Перейдите на [https://oauth.yandex.ru/authorize?response_type=token&client_id=23cabbbdc6cd418abb4b39c32c41195c](https://oauth.yandex.ru/authorize?response_type=token&client_id=23cabbbdc6cd418abb4b39c32c41195c)
-2. Авторизуйтесь и скопируйте полученный токен
+1. Перейдите на [https://oauth.yandex.ru/authorize?response_type=token&client_id=23cabbbdc6cd418abb4b39c32c41195d](https://oauth.yandex.ru/authorize?response_type=token&client_id=23cabbbdc6cd418abb4b39c32c41195d)
+2. Авторизуйтесь и предоставьте доступ по необходимости
+3. После перенаправления получаем токен вида [https://music.yandex.ru/#access_token=AQAAAAAYc***&token_type=bearer&expires_in=315356450]
+4. Копируем все что находиться под ключём [access_token]
+5. Инструкция также представлена в [https://github.com/MarshalX/yandex-music-api/discussions/513](https://github.com/MarshalX/yandex-music-api/discussions/513)
 
 ### Способы указания токена (по приоритету):
 
@@ -264,6 +267,4 @@ yamusic-sdk/
 
 > 💡 **Совет**: Все скачанные файлы сохраняются в папку `music/` (или указанную в `MUSIC_DOWNLOAD_DIR`). Используйте `client.delete_downloaded()` для очистки.
 
-## HEAD
 **Happy listening! 🎧**
-
